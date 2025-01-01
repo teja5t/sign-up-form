@@ -1,3 +1,8 @@
+:root {
+    --lhs-width: min(740px, 40vw);
+    --rhs-width: calc(100vw - min(740px, 40vw));
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -10,16 +15,16 @@ body {
 }
 
 .lhs {
-    background-image: url(./images/macarons.png);
+    background-image: url(./images/macarons2.jpeg);
     height: 100vh;
-    width: min(400px, 50vw);
-    background-size: 420px;
+    width: var(--lhs-width);
+    background-size: 740px;
 }
 
 .logo-wrapper {
     position: relative;
-    top: 10vh;
-    background-color: rgba(0, 0, 0, 0.8); /* Black with 80% opacity */
+    top: 15vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Black with 80% opacity */
     padding: 10px;
     width: inherit;
     display: flex; /* Shrink-wrap the logo */
@@ -30,3 +35,64 @@ body {
     display: block;
     max-width: 100%;
 }
+
+.rhs {
+}
+
+.s1 {
+    background-color: #fffcfc;
+    height: calc(15vh + 146px);
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.s1 p {
+    padding: 40px;
+}
+
+.s2 {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 10px 10px 10px lightgray;
+}
+
+.inp {
+    width: max(250px, calc(var(--rhs-width) / 2));
+    padding: 5px;
+    padding-left: 40px;
+}
+
+.inp:last-of-type {
+    padding-bottom: 40px;
+}
+
+label {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+input, select {
+    font-size: 16px;
+}
+
+.s3 button {
+    margin: 40px;
+    font-size: 20px;
+    background-color:darkolivegreen;
+    padding: 10px 40px 10px 40px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+button:active {
+    background-color: olive;
+}
+
