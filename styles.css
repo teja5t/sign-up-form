@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+}
+
+body {
+    display: flex;
+}
+
+.lhs {
+    background-image: url(./images/macarons.png);
+    height: 100vh;
+    width: min(400px, 50vw);
+    background-size: 420px;
+}
+
+.logo-wrapper {
+    position: relative;
+    top: 10vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Black with 80% opacity */
+    padding: 10px;
+    width: inherit;
+    display: flex; /* Shrink-wrap the logo */
+    justify-content: center;
+}
+
+.logo-wrapper img {
+    display: block;
+    max-width: 100%;
+}
