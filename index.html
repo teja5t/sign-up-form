@@ -3,10 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign-up Form</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <div class="lhs">
+        <h1>Tejas's Treats</h1>
+    </div>
+    <div class="rhs">
+        <form>
+            <div class="s1">
+                <p>Place an order for Tejas's world famous macarons.</p>
+            </div>
+            <div class="s2">
+                <div class="inp">
+                    <label for="first-name">FIRST NAME</label>
+                    <br>
+                    <input type="text" name="first-name" id="first-name">
+                </div>
+                <div class="inp">
+                    <label for="last-name">LAST NAME</label>
+                    <br>
+                    <input type="text" name="last-name" id="last-name">
+                </div>
+                <div class="inp">
+                    <label for="email">EMAIL</label>
+                    <br>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="inp">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <br>
+                    <input type="tel" name="phone-number" id="phone-number">
+                </div>
+                <div class="inp">
+                    <label for="macaron-flavor">MACARON FLAVOR</label>
+                    <br>
+                    <select name="macaron-flavor" id="macaron-flavor">
+                        <option value="none" selected disabled>Select an Option</option>
+                        <option value="blueberry-lemon">Blueberry Lemon</option>
+                        <option value="matcha">Matcha</option>
+                        <option value="oreo">Oreo</option>
+                        <option value="strawberry-cheesecake">Strawberry Cheesecake</option>
+                        <option value="red-velvet">Red Velvet</option>
+                        <option value="blackberry-lavender">Blackberry Lavender</option>
+                        <option value="vanilla-bean">Vanilla Bean</option>
+                    </select>
+                </div>
+                <div class="inp">
+                    <label for="quantity">QUANTITY</label>
+                    <br>
+                    <select name="quantity" id="quantity">
+                        <option value="none" selected disabled>Select an Option</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="30">30</option>
+                        <option value="40">40</option>
+                    </select>
+                </div>
+            </div>
+            <div class="s3">
+                <button type="reset">Place Order</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
