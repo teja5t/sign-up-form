@@ -19,30 +19,32 @@
                 <p>Enter your contact and purchase information to place an order for Tejas's world famous macarons.<br><br>You know you want some!</p>
             </div>
             <div class="s2">
+                <p class="required">Required fields are followed by <span aria-label="required">*</span>.</p>
+                <div class="spacer"></div>
                 <div class="inp">
-                    <label for="first-name">FIRST NAME</label>
+                    <label for="first-name">FIRST NAME<span aria-label="required">*</span></label>
                     <br>
-                    <input type="text" name="first-name" id="first-name">
+                    <input type="text" name="first-name" id="first-name" required>
                 </div>
                 <div class="inp">
-                    <label for="last-name">LAST NAME</label>
+                    <label for="last-name">LAST NAME<span aria-label="required">*</span></label>
                     <br>
-                    <input type="text" name="last-name" id="last-name">
+                    <input type="text" name="last-name" id="last-name" required>
                 </div>
                 <div class="inp">
-                    <label for="email">EMAIL</label>
+                    <label for="email">EMAIL<span aria-label="required">*</span></label>
                     <br>
-                    <input type="email" name="email" id="email">
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div class="inp">
-                    <label for="phone-number">PHONE NUMBER</label>
+                    <label for="phone-number">PHONE NUMBER<span aria-label="required">*</span></label>
                     <br>
-                    <input type="tel" name="phone-number" id="phone-number">
+                    <input type="tel" name="phone-number" id="phone-number" required>
                 </div>
                 <div class="inp">
-                    <label for="macaron-flavor">MACARON FLAVOR</label>
+                    <label for="macaron-flavor">MACARON FLAVOR<span aria-label="required">*</span></label>
                     <br>
-                    <select name="macaron-flavor" id="macaron-flavor">
+                    <select name="macaron-flavor" id="macaron-flavor" required>
                         <option value="none" selected disabled>Select an Option</option>
                         <option value="blueberry-lemon">Blueberry Lemon</option>
                         <option value="matcha">Matcha</option>
@@ -54,9 +56,9 @@
                     </select>
                 </div>
                 <div class="inp">
-                    <label for="quantity">QUANTITY</label>
+                    <label for="quantity">QUANTITY<span aria-label="required">*</span></label>
                     <br>
-                    <select name="quantity" id="quantity">
+                    <select name="quantity" id="quantity" required>
                         <option value="none" selected disabled>Select an Option</option>
                         <option value="10">10</option>
                         <option value="20">20</option>
@@ -66,7 +68,7 @@
                 </div>
             </div>
             <div class="s3">
-                <button type="reset">Place Order</button>
+                <button type="submit">Place Order</button>
             </div>
         </form>
     </div>
